@@ -24,12 +24,12 @@ $classLoader = require $autoloaderPath;
 
 // Customization variables
 $argv = $_SERVER['argv'];
-$appName = "ExampleProject";
+$appName = "G1astartertest";
 $appVersion = trim(file_get_contents(__DIR__ . '/VERSION'));
-$commandClasses = [ \ExampleProject\Cli\ExampleCommands::class ];
-$selfUpdateRepository = 'g1a/starter';
-$configPrefix = 'EXAMPLEPROJECT';
-$configFilePath = getenv($configPrefix . '_CONFIG') ?: getenv('HOME') . '/.example-project/example-project.yml';
+$commandClasses = [ \G1astartertest\Cli\ExampleCommands::class ];
+$selfUpdateRepository = 'jonpugh/g1astartertest';
+$configPrefix = 'G1ASTARTERTEST';
+$configFilePath = getenv($configPrefix . '_CONFIG') ?: getenv('HOME') . '/.g1astartertest/g1astartertest.yml';
 
 // Define our Runner, and pass it the command classes we provide.
 $runner = new \Robo\Runner($commandClasses);

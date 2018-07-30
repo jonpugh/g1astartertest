@@ -1,6 +1,6 @@
 <?php
 
-namespace ExampleProject;
+namespace G1astartertest;
 
 class Example
 {
